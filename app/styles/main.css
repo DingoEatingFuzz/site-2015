@@ -1,0 +1,61 @@
+body {
+  background:#F9F8F5;
+  font: 14px / 1.5 'Crimson Text', Georgia, sans-serif;
+  color: #666;
+}
+
+strong, h1 {
+  color: #333;
+}
+
+.author {
+  position: fixed;
+  left: 100px;
+  bottom: 0;
+  background: #D3D2CB;
+  padding: 30px 20px 10px 20px;
+  width: 175px;
+}
+
+.author h1 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+p, h1 {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+figure {
+  position: fixed;
+  top: 0;
+  right: 50px;
+  padding: 30px;
+  padding-top: 50px;
+  margin: 0;
+  background: #D3D2CB;
+  width: 700px;
+}
+
+figcaption {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+figcaption strong {
+  font-style: normal;
+}
+
+figure.gameoflife > div {
+  position: relative;
+  width:700px;
+  height:500px;
+}
+
+figure.gameoflife canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

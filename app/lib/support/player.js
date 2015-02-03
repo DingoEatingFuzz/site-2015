@@ -60,7 +60,7 @@ Player = (function() {
   function printBoard(board, ctx, size) {
     ctx.fillStyle = '#fff';
     ctx.fillRect(0, 0, board.width * size, board.height * size);
-    ctx.fillStyle = '#09F';
+    ctx.fillStyle = '#666';
     ctx.beginPath();
     for (var i = 0, len = board.cells.length; i < len; ++i) {
       var x = i % board.width, y = Math.floor(i / board.width);
@@ -70,14 +70,14 @@ Player = (function() {
 
   function printLines(canvas, size) {
     var ctx = canvas.getContext('2d');
-    ctx.strokeStyle = '#CCC';
+    ctx.strokeStyle = 'rgba(180, 180, 180, 0.4)';
     ctx.lineWidth   = 1;
     ctx.beginPath();
-    for (var i = -0.5, len = canvas.width; i <= len; i += size) {
+    for (var i = -0.5, len = canvas.width; i <= len - 1; i += size) {
       ctx.moveTo(i, 0);
       ctx.lineTo(i, canvas.height);
     }
-    for (i = -0.5, len = canvas.height; i <= len; i += size) {
+    for (i = -0.5, len = canvas.height; i <= len - 1; i += size) {
       ctx.moveTo(0, i);
       ctx.lineTo(canvas.width, i);
     }
